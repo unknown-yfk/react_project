@@ -14,7 +14,9 @@ const AppHeader = () => {
                 <i class="fas fa-bolt"></i>
                 <a>Tech</a>
             </div>  
-            <Menu mode="horizontal" defaultSelectedKeys={['Home']}>
+            <Menu mode="horizontal" defaultSelectedKeys={['Home']}
+                        breakpoint="lg"
+                        collapsedWidth="0">
             <Menu.Item key="home">Home</Menu.Item>
             <Menu.Item key="about">About</Menu.Item>
             <Menu.Item key="contact">Contact</Menu.Item>
