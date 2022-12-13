@@ -1,28 +1,25 @@
 import React from "react";
-import {  Layout, Menu } from 'antd';
+import './App.css';
+import { Layout } from 'antd';
+import AppHeader from './components/common/header'
+import AppHome from './views/home';
 
 
-function Apps() {
-  const { Header } = Layout;
+const { Header,Content } = Layout;
+
+const App = () => {
+
   return (
-    <Layout className="layout">
-      <Header>
-        <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
-      </Header>
+   <Layout className="mainLayout">
+       <Header>
+         <AppHeader/> 
+       </Header>
+       <Content>
+        <AppHome/>
+      </Content>
     </Layout>
-  );
+     
+  )
 }
 
-export default Apps;
+export default App

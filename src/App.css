@@ -20,7 +20,7 @@ body {
 
 .container-fluid {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 800px;
   padding: 0 15px;
 }
 
@@ -54,7 +54,7 @@ title holder
   padding: 0 0 20px;
   margin: 0 0 40px;
 }
-
+/* 
 .titleHolder:after {
   transform: translateX(-50%);
   content: '';
@@ -64,7 +64,7 @@ title holder
   left: 50%;
   height: 3px;
   width: 50px;
-}
+} */
 
 .titleHolder h2 {
   font-size: 28px;
