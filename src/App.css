@@ -20,8 +20,9 @@ body {
 
 .container-fluid {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1200px;
   padding: 0 15px;
+  
 }
 
 .ant-layout {
@@ -87,6 +88,11 @@ header
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+}
+
+.header1{
+  /* background: red; */
+  padding: 5px 0;
 }
 
 .header .logo {
@@ -162,6 +168,8 @@ header
 .header .ant-menu li.ant-menu-item {
   position: relative;
   color: #333;
+
+  
 }
 
 .header .ant-menu li.ant-menu-item:before,
@@ -210,7 +218,7 @@ hero
 ---- 
 */
 .heroBlock {
-  background: url('assets/images/bg-hero.jpg') no-repeat;
+  background: url('assets/images/clean-design.jpg') no-repeat;
   background-position: 50% 100%;
   background-size: cover;
   height: 100vh;
