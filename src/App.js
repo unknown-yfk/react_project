@@ -1,13 +1,15 @@
 import React from "react";
 import './App.css';
-// import { Layout } from 'antd';+
+// import { Layout } from 'antd';
 import Trail from './components/common/trail'
 // import Title from "antd/es/skeleton/Title";
 import { Divider, Typography } from 'antd';
 import { Footer } from "antd/es/layout/layout";
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+
 import AppHeader from "./components/common/header";
+import Header2 from "./components/common/header2";
 import {
   Routes,
   Route
@@ -26,13 +28,21 @@ const App = () => {
   return (
     <>
 
-<Layout className="mainLayout">
+<Layout>
+  <Layout className="headerLayout">
       <Header>
-        <div className="logo" />
        <AppHeader/>
       </Header>
+  </Layout>
+       
+    <Layout className="header2Layout">
+      <Header>
+       <Header2/>
+      </Header>
+    </Layout>
+
       
-      <Content className="contenStyle">
+      {/* <Content className="contenStyle">
         
           <Title>mainContent</Title>
         <div
@@ -52,11 +62,11 @@ const App = () => {
 
 
       </Content>
+ */}
 
-
-      <Footer>
+      {/* <Footer>
         Ant Design ©2018 Created by Ant UED
-      </Footer>
+      </Footer> */}
     </Layout>
 
     </>

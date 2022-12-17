@@ -21,12 +21,19 @@ const AppHeader = () => {
             <Menu mode="horizontal" defaultSelectedKeys={['Home']}
                         breakpoint="lg"
                         collapsedWidth="0">
-            <Menu.Item key="home"><Link to="/trail">Home</Link> </Menu.Item>
-            <Menu.Item key="about">About</Menu.Item>
-            <Menu.Item key="contact">contact</Menu.Item>
-            <Menu.Item key="feature">Fe</Menu.Item>
+            <Menu.Item><i className="fas fa-car"> </i> +2322343</Menu.Item>
+            <Menu.Item><i className="fas fa-bolt"> </i></Menu.Item>
+            <Menu.Item><i className="fas fa-phone"> </i></Menu.Item>
+            <Menu.Item><i className="fas fa-book"> </i></Menu.Item>
+            
+          
+
+            
             </Menu>
         </div>
+
+
+        
    </div>
 
 
