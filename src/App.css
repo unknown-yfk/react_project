@@ -429,10 +429,18 @@ contact
 footer
 ------
 */
-/* .ant-layout-footer {
+
+
+.topFooter .ant-layout-footer{
+  background: #f8f8f8 !important;
+  color: #111 !important;
+  padding: 200px !important;
+}
+
+.ant-layout-footer {
   background: #111 !important;
   color: #fff !important;
-  padding: 60px 0 !important;
+  padding: 30px 0 !important;
   text-align: center;
 }
 
@@ -459,6 +467,7 @@ footer
   justify-content: center;
   padding: 0;
   font-size: 24px;
+  padding-bottom: 10px;
 }
 
 .footer .socials li {
@@ -477,34 +486,48 @@ footer
   opacity: 0.7;
 }
 
+
+
+
 .mobileVisible {
   display: none;
 }
 
 .mobileHidden {
   display: block;
-} */
+} 
 
 /* 
-responsive
-----------
-*/
-/* @media only screen and (max-width: 991px) {
-  .pricingBlock .ant-row>div:nth-child(2) .ant-list-item {
-    transform: scale(1.14);
-  }
+
+
+
+
+
+ /* responsive
+ ---------- */
+ .mobileVisible {
+  display: none;
 }
 
-@media only screen and (max-width: 767px) {
-  .pricingBlock .ant-row>div:nth-child(2) .ant-list-item {
-    transform: scale(1);
+.mobileHidden {
+  display: block;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+
+  .mobileHidden {
+    display: none;
   }
 
   .mobileVisible {
     display: block;
   }
 
-  .mobileHidden {
-    display: none;
-  }
-} */
+
+
+
+
+}
+
