@@ -1,9 +1,10 @@
 import { Anchor, Menu } from "antd"
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Space, Drawer,Button } from 'antd';
-import AppHeader from "./header";
+import AppHeader from "./topheader";
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
     
 
 
@@ -24,6 +25,7 @@ import { Link } from "react-router-dom";
 
           {
             label: 'Navigation Three',
+            
             key: 'SubMenu',
           
             children: [
@@ -41,20 +43,7 @@ import { Link } from "react-router-dom";
                   },
                 ],
               },
-              {
-                type: 'group',
-                label: 'Item 2',
-                children: [
-                  {
-                    label: 'Option 3',
-                    key: 'setting:3',
-                  },
-                  {
-                    label: 'Option 4',
-                    key: 'setting:4',
-                  },
-                ],
-              },
+              
             ],
           },
 
@@ -71,6 +60,7 @@ import { Link } from "react-router-dom";
         return (
   
           <>
+          
               <div className="mobileHidden">  
                 <div className="header2">
                     <Menu mode="horizontal" defaultSelectedKeys={['Home']}
@@ -90,7 +80,7 @@ import { Link } from "react-router-dom";
                             </a>
                           </Dropdown>
                     </Menu>
-
+                  
           
                   </div>
               </div>  

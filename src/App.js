@@ -1,14 +1,12 @@
 import React,  { useState } from "react";
 import './App.css';
-import Trail from './components/common/trail'
 import { Divider, Typography } from 'antd';
-import { Footer } from "antd/es/layout/layout";
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import AppHeader from "./components/common/header";
-import Header2 from "./components/common/header2";
 import { Dropdown, Space, Drawer,Button } from 'antd';
-import AppFooter from "./components/common/footer";
-import Topfooter from "./components/common/topfooter";
+import AppHeader from "./components/common/AppHeader";
+import AppFooter from "./components/common/AppFooter";
+import Trail from "./trail";
+
 import {
   Routes,
   Route
@@ -30,20 +28,10 @@ const App = () => {
   return (
     <>
 
-<Layout>
-  <Layout className="headerLayout">
-      <Header>
-       <AppHeader/>
-      </Header>
-  </Layout>   
-    <Layout className="header2Layout">
-      <Header>
-       <Header2/>
-      </Header>
-    </Layout>
-
-      
-      {/* <Content className="contenStyle"> */}
+      <Layout className="MainLayout">
+        <AppHeader/>
+  
+      <Content className="contenStyle">
         
           {/* <Title>mainContent</Title> */}
         {/* { <div
@@ -55,15 +43,15 @@ const App = () => {
         </Paragraph>
         </div> } */}
 
-        {/* <Routes > 
+        <Routes > 
 
           <Route path="/trail" element={ <Trail/>} />
 
-        </Routes> */}
+        </Routes>
 
 
-      {/* </Content> */}
-      <div>Scroll to bottom</div>
+      
+     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
@@ -83,7 +71,7 @@ const App = () => {
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>    <div>Scroll to bottom</div>
+    <div>Scroll to bottom</div>    
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
@@ -91,7 +79,6 @@ const App = () => {
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
 
-        <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
@@ -104,7 +91,8 @@ const App = () => {
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>    <div>Scroll to bottom</div>
+    <div>Scroll to bottom</div>
+    <div>Scroll to bottom</div>   
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
@@ -154,20 +142,17 @@ const App = () => {
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
 
+        
+      </Content>
+
+
+        {/* </> */}
+
+
 
         
 
-        <Layout className="topFooter">
-          <Footer>
-          <Topfooter/>
-          </Footer>
-        </Layout>
-
-        <Layout className="bottomFooter">
-        <Footer>
-          <AppFooter/>
-      </Footer>
-        </Layout>
+    <AppFooter/>
     </Layout>
    
     </>

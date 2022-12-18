@@ -2,7 +2,7 @@ import React from 'react'
 import { BackTop, FloatButton } from 'antd';
 
 
-const AppFooter = () => {
+const BottomFooter = () => {
   return (
     <>
 
@@ -24,4 +24,4 @@ const AppFooter = () => {
   )
 }
 
-export default AppFooter
+export default BottomFooter

@@ -1,9 +1,8 @@
 
-
 const Trail = () => {
   return (
     <div>
-        <h1>hello from taril page</h1>
+      <h1>this is trail</h1>
     </div>
   )
 }
