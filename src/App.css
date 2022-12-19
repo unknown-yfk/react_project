@@ -25,6 +25,11 @@ body {
     padding: 0 55px;
 }
 
+
+.contenStyleTrail{
+  padding: 100px 55px;
+}
+
 /* .contenStyle{
 
   padding: 30px;
@@ -38,6 +43,8 @@ body {
   padding: 0 35px;
   
 }
+
+
 
 /* header 1 style */
 .headerLayout .ant-layout-header {
@@ -423,19 +430,33 @@ footer
 
  .topFooter{
 
-  flex-direction: column;
+  /* flex-direction: column; */
 
+}
+
+.ant-row{
+  width: auto !important;
 }
 
 .gutter{
  
-  flex-direction:column;
+  display: inline-block;
+  align-items: center !important;
+  text-align: center !important;
 
 }
-.topfooter{
+
+.gutter .gutter-row
+{
+
+  justify-content: center !important;
   margin: auto;
+ 
+  
 }
-
+.contenStyleTrail{
+  flex-direction: column;
+}
 }
 
 

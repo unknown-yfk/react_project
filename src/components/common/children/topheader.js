@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Dropdown, Space, Drawer,Button } from 'antd';
+import { Space, Drawer,Button } from 'antd';
 import { Menu } from "antd"
-import Link from "antd/es/typography/Link"
-import Header2 from './bottomheader';
-import { Anchor, Row, Col } from 'antd';
+// import Link from "antd/es/typography/Link"
+// import Header2 from './bottomheader';
+import { Anchor, Image } from 'antd';
 
 
 
@@ -25,7 +25,14 @@ const TopHeader = () => {
     <div className="container-fluid">
         <div className="header">
             <div className="logo">
-                <i className="fas fa-car"></i>
+                {/* <i className="fas fa-car"></i> */}
+                <Image
+              preview={false}
+              width={100}
+              height={100}
+              src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
+               />
+               
                 <a>Saint Michael</a>
             </div>  
             <Menu mode="horizontal" defaultSelectedKeys={['Home']}

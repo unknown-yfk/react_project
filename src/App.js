@@ -1,11 +1,12 @@
-import React,  { useState } from "react";
+import React from "react";
 import './App.css';
-import { Divider, Typography } from 'antd';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { Dropdown, Space, Drawer,Button } from 'antd';
+import { Typography } from 'antd';
+import { Layout } from 'antd';
+// import { Dropdown, Space, Drawer,Button } from 'antd';
 import AppHeader from "./components/common/AppHeader";
 import AppFooter from "./components/common/AppFooter";
-import Trail from "./trail";
+import Trail from './views/contact';
+import Gallery from "./views/gallery";
 
 import {
   Routes,
@@ -20,7 +21,7 @@ const Navbar = () => {
  
   };
 
-const { Header,Content } = Layout;
+const { Content } = Layout;
 
 const App = () => {
 
@@ -46,10 +47,12 @@ const App = () => {
         <Routes > 
 
           <Route path="/trail" element={ <Trail/>} />
+          <Route path="/gallery" element={ <Gallery/>} />
+
 
         </Routes>
 
-
+{/* 
       
      <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
@@ -140,7 +143,7 @@ const App = () => {
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
+    <div>Scroll to bottom</div> */}
 
         
       </Content>

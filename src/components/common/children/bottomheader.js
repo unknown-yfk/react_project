@@ -1,10 +1,10 @@
-import { Anchor, Menu } from "antd"
+import {  Menu } from "antd"
 import { DownOutlined } from '@ant-design/icons';
-import { Dropdown, Space, Drawer,Button } from 'antd';
-import AppHeader from "./topheader";
-import React, { useState } from 'react';
+import { Dropdown, Space } from 'antd';
+// import AppHeader from "./topheader";
+// import React, { useState } from 'react';
 // import { Link } from "react-router-dom";
-import { Outlet, Link } from "react-router-dom";
+// import { Outlet, Link } from "react-router-dom";
     
 
 
@@ -55,7 +55,7 @@ import { Outlet, Link } from "react-router-dom";
 
       const Header2 = () => {
 
-        const { Link } = Anchor;
+        // const { Link } = Anchor;
         
         return (
   
