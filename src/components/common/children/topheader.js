@@ -4,6 +4,10 @@ import { Menu } from "antd"
 // import Link from "antd/es/typography/Link"
 // import Header2 from './bottomheader';
 import { Anchor, Image } from 'antd';
+import { Link } from "react-router-dom";
+// import image1 from  '../../../assets/images/image1';
+
+
 
 
 
@@ -58,11 +62,12 @@ const TopHeader = () => {
                   onClose={onClose} 
                   open={open}>                        
                         <Anchor>
-                        <Link href="#part-1" title="Home" />
-                        <Link href="#part-2" title="About Us" />
-                        <Link href="#part-3" title="Service" />
-                        <Link href="#part-4" title="Gallery" />
-                        <Link href="#part-5" title="Contact" />
+                        <Link to="/" title="Home" />
+                        <Link to="/trail" title="About Us" />
+                        <Link to="/gallery" title="Service" />
+                        <Link to="/" title="Gallery" />
+                        <Link to="/" title="Contact" />
+                        <Link to="/trail"> Gallery</Link>
                         </Anchor>
                    </Drawer> 
                    {/* <Header2 mode={"inline"}/> */}

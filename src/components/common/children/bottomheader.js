@@ -1,10 +1,8 @@
 import {  Menu } from "antd"
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
-// import AppHeader from "./topheader";
-// import React, { useState } from 'react';
-// import { Link } from "react-router-dom";
-// import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
     
 
 
@@ -66,9 +64,9 @@ import { Dropdown, Space } from 'antd';
                     <Menu mode="horizontal" defaultSelectedKeys={['Home']}
                                 breakpoint="lg"
                                 collapsedWidth="0">
-                    <Menu.Item> Home</Menu.Item>
-                    <Menu.Item>About Us</Menu.Item>
-                    <Menu.Item>Gallery</Menu.Item>
+                    <Menu.Item><Link to="/"> Home</Link></Menu.Item>
+                    <Menu.Item><Link to="/trail"></Link>About Us</Menu.Item>
+                    <Menu.Item><Link to="/gallery"></Link>Gallery</Menu.Item>
                     <Menu.Item>Contact</Menu.Item>
                           <Dropdown
                             menu={{ items }}>
@@ -80,6 +78,10 @@ import { Dropdown, Space } from 'antd';
                             </a>
                           </Dropdown>
                     </Menu>
+
+                   
+
+             
                   
           
                   </div>

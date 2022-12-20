@@ -89,8 +89,8 @@ const items = [
     <>
 
         <div className='topfooter'>
-        <Row gutter={[32, 24]} className="gutter">
-            {items.map(item => {
+        <Row gutter={[32, 24]} className="guttsader">
+            {/* {items.map(item => {
               const {key,title,content,listTitle}=item;
                 return (
                   //  <Space>
@@ -111,7 +111,38 @@ const items = [
                     </Col>
                     // </Space>
                  );
-            })}
+            })} */}
+
+
+            {items.map(item => {
+              const {listTitle, key}=item;
+              return(
+                <Col span={6} key={key}  className="gutter-row"
+                xs={12} xl={6}>
+                  <h1>{item.title}</h1>
+                  <ul className='lists'>
+                      {
+                        listTitle.map(item => {
+
+                          return(
+
+                            <li><Link href='{item.href}'>{item.name}</Link></li>
+                            
+                          )
+                        })
+                      }
+                  </ul>
+                </Col>
+                
+              )
+              
+            }
+
+            )}
+
+
+
+
 
             
          

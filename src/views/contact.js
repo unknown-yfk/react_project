@@ -1,15 +1,17 @@
-import { Anchor, Row, Col, Image, Typography,Button, Form, Input, InputNumber } from 'antd';
+import { Anchor, Row, Col, Image, Typography,Button, Form, Input, InputNumber,Divider } from 'antd';
 
 const { Paragraph, Text } = Typography;
 const layout = {
   labelCol: {
-    span: 8,
+    span: 4,
   },
   wrapperCol: {
     span: 16,
   },
 };
-
+const tailLayout = {
+  wrapperCol: { xs: { span: 6 }, sm: { span: 16, offset: 4 }, md: { span: 12, offset: 8 }, lg: { span: 16, offset: 4 } }
+};
 
 
 const validateMessages = {
@@ -27,72 +29,75 @@ const Trail = () => {
   const onFinish = (values) => {
     console.log(values);
   };
+  const { TextArea } = Input;
   return (
     <>
 
 
 
       <div className='contenStyleTrail'>
-      <Row gutter={[16, 16]}>
-        <Col span={12} >
+              <div className="contactStyle">
+            <Text style={{textAlign:'center'}}><h1> Contact Us</h1>
+            <Divider plain></Divider>
+            <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim.
+                 Mollit exercitation nulla esse.</h5> 
+           </Paragraph>
+            </Text>
+              </div>
+      <Row gutter={[16, 16]}
+      >
+        <Col span={16} 
+         xs={24} xl={12} >
         <Text> <h1> Get in touch with us</h1></Text>
-        <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim. Mollit exercitation nulla esse 
-            nostrud nisi ex sit Lorem culpa eu cillum Lorem nisi.</h5> 
+        <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim. Mollit exercitation.</h5> 
            </Paragraph>
            <Image
             preview={false}
-              width={400}
+              width={280}
               height={250}
               src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
                />
         </Col>
+        <Col span={8} 
+         xs={24} xl={12}  >
+          <Form  {...layout}>
+            <Form.Item
+            {...tailLayout}
+            >
+          <Text> <h3 > Put Your Information here</h3></Text>
+            </Form.Item>
+            <Form.Item 
+            label="Name"
+            name="Name">   
+            <Input  placeholder="Name" />
+            </Form.Item>
 
-        <Col span={12} >
-        
-        <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}
-        style={{marginTop:'40px'}}>
-        <Text> <h3 style={{textAlign:'center', marginLeft:'125px'}}> Put your messages here</h3></Text>
-      <Form.Item
-        name={['user', 'name']}
-        label="Name"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user', 'email']}
-        label="Email"
-        rules={[
-          {
-            type: 'email',
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item name={['user', 'introduction']} label="Introduction">
-        <Input.TextArea  rows={4}  maxLength={8} />
-      </Form.Item>
-      <Form.Item
-        wrapperCol={{
-          ...layout.wrapperCol,
-          offset: 8,
-        }}
-      >
-        <Button type="primary" htmlType="submit" block>
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+            <Form.Item 
+            label="Email"
+            name="Email">   
+            <Input  placeholder="Email" />
+            </Form.Item>
 
+            <Form.Item
+             label="Message"
+             name="Message"
+            >
 
+            <TextArea rows={4} placeholder="Type your message here" maxLength={6} />
 
-
+            </Form.Item>
+            <Form.Item
+            {...tailLayout}
+            >
+            <Button type="primary" block>Send</Button>
+            </Form.Item>
+          </Form>
+       
         </Col>
+
+
+
+
       </Row>
         </div>      
 
