@@ -1,25 +1,134 @@
 import React, { useState } from 'react';
 import { Anchor, Row, Col, Image, Typography,Button, Form, Input, InputNumber, Space } from 'antd';
 import { Card, Divider } from 'antd';
+import TitleBar from '../components/TitleBar';
 const { Meta } = Card;
 const { Paragraph, Text } = Typography;
 
 const DemoBox = (props) => <p className={`height-${props.value}`}>{props.children}</p>;
 
-  // const gallerys = [
-  //   {
+  const gallerys = [
+    {
+     
+          key: '1',
+          src:'https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp'
+         
+  
+      },
 
+      {
+     
+          key: '2',
+          src:'https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp'
+         
+  
+      },
+
+      {
+     
+          key: '3',
+          src:'https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp'
+         
+  
+      },
+
+  ];
+
+
+
+
+  const gallerys2 = [
+     {
       
+           key: '1',
+           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp',
+          
+          
+   
+       },
+ 
+       {
+      
+           key: '2',
+           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
+         
+          
+   
+       },
+ 
+       {
+      
+           key: '3',
+           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp',
+          
+   
+       },
+       {
+      
+          key: '4',
+          src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
+        
+         
+  
+      },
+    
+ 
+   ];
 
 
 
-  //   }
-  // ];
+
+  const gallerys3 = [
+     {
+      
+           key: '1',
+           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'
+          
+   
+       },
+ 
+       {
+      
+           key: '2',
+           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'
+          
+   
+       },
+ 
+       {
+      
+           key: '3',
+           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp'
+          
+   
+       },
+       {
+      
+          key: '4',
+          src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'
+         
+  
+      },
+    
+ 
+   ];
 
 
-  const tailLayout = {
-  wrapperCol: { xs: { span: 6 }, sm: { span: 16, offset: 4 }, md: { span: 12, offset: 8 }, lg: { span: 16, offset: 4 } }
-};
+
+
+
+
+//   const tailLayout = {
+
+//   wrapperCol: { xs: { span: 8 }, xl: { span: 6 } },
+//   wrapperCol2:  { xs: { span: 8 }, xl: { span: 12 } },
+//   wrapperCol3:  { xs: { span: 8 }, xl: { span: 7 } },
+//   wrapperCol4:  { xs: { span: 8 }, xl: { span: 10 } },
+//   wrapperCol5:  { xs: { span: 8 }, xl: { span: 8 } }
+
+// };
+
+
 
 
 
@@ -27,19 +136,21 @@ const DemoBox = (props) => <p className={`height-${props.value}`}>{props.childre
 
 const Gallery = () => {
 
-    const [size, setSize] = useState('small');
+    // const [size, setSize] = useState('small');
 
 
-    const [visible, setVisible] = useState(false);
-    const onChange = (e) => {
-      setSize(e.target.value);
-    };
+    // const [visible, setVisible] = useState(false);
+    // const onChange = (e) => {
+    //   setSize(e.target.value);
+    // };
 
 
   return (
     <>
          <div className='contenStyleTrail'>
-            <Text style={{textAlign:'center'}}><h1>Hello from Gallery</h1>
+            <Text style={{textAlign:'center'}}>
+              <TitleBar text={'Hello From Gallery'}/>
+            
             {/* <Divider plain></Divider> */}
             <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim.
                  Mollit exercitation nulla esse 
@@ -52,24 +163,24 @@ const Gallery = () => {
               </div> */}
 
               <Divider plain></Divider>
-              <div className="site-card-border-less-wrapper">
-               <Row>
-               
-                    <Row gutter={[16, 48]}>
-                         <Col span={12}  xs={8} xl={12}>
+              <div>
+                  <Row>
+                    <Row gutter={[8, 48]}>
+
+                         <Col  xs={12} xl={12}>
                          <Image className='grid-img1'
                          
                          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp'></Image>
 
                          </Col>  
-                         
-
-                         <Col span={6} xs={8} xl={6}>
+                    
+     
+                         <Col xs={12} xl={6}>
                          <Image
                          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'></Image>
                          
                          </Col>  
-                           <Col span={6} xs={8} xl={6}>
+                           <Col xs={8} xl={6}>
                          <Image
                          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'></Image>
                          
@@ -79,22 +190,21 @@ const Gallery = () => {
 
                     <Divider orientation="left"></Divider>
 
-                    <Row gutter={[16, 48]}>
-                          <Col span={6} xs={8} xl={6}>
+                    <Row gutter={[8, 48]}>
 
-                              
+                          <Col xs={8} xl={6}>  
                          <Image
                          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'></Image>
                          </Col>
 
-                          <Col span={6} xs={8} xl={6}>     
+                          <Col xs={8} xl={6}>     
                          <Image
                          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'></Image>
 
                         
                          </Col>
                     
-                          <Col span={12} xs={8} xl={12}>
+                          <Col xs={8} xl={12}>
                          <Image  className='grid-img2'
      
                          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp'></Image>
@@ -104,20 +214,22 @@ const Gallery = () => {
 
                            <Divider orientation="left"></Divider>
 
-                           <Row gutter={[16, 48]}>
-                         <Col span={7} xs={8} xl={7}>
+                           <Row gutter={[8, 48]}>
+
+                           
+                         <Col xs={8} xl={7}>
                           <Image
                          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'></Image>
 
                          </Col>  
-                          <Col span={10} xs={8} xl={10}>
+                          <Col  xs={8} xl={10}>
                          <Image className='grid-img3'
                          
                          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp'></Image>
 
                          </Col> 
 
-                          <Col span={7} xs={8} xl={7}>
+                          <Col xs={8} xl={7}>
                          <Image
                          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'></Image>
 
@@ -127,52 +239,45 @@ const Gallery = () => {
 
                     <Divider orientation="left"></Divider>
 
-                    <Row gutter={[16, 48]}>
-                          <Col span={6} xs={8} xl={6}>          
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'></Image>
-                         </Col>
-
-                          <Col span={6} xs={8} xl={6}>     
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'></Image>
-
-                        
-                         </Col>
-                    <Col span={6} xs={8} xl={6}>          
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'></Image>
-                         </Col>
-
-                          <Col span={6} xs={8} xl={6}>     
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'></Image>
-
-                        
-                         </Col>
+                    <Row gutter={[8, 48]}>
+                         
+                         {
                     
+                         gallerys2.map(gallery2 => {
+                              return (
+
+                              <Col xs={8} xl={6} >          
+                              <Image  key={gallery2.key} 
+                              src={gallery2.src}></Image>
+                              </Col>  
+                              )
+                         })
+                           
+                           }
                                  
                     </Row>
 
                     <Divider orientation="left"></Divider>
 
-                    <Row gutter={[16, 48]}>
-                         <Col span={8} xs={8} xl={8}>
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp'></Image>
+                    <Row gutter={[8, 48]}>   
 
-                         </Col>  
-                          <Col span={8} xs={8} xl={8}>
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp'></Image>
+                    {
+                        gallerys.map(gallery => {
 
-                         </Col> 
+                         // const {key}=item;
 
-                         <Col span={8} xs={8} xl={8}>
-                         <Image
-                         src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp'></Image>
+                          return(
 
-                         </Col>    
+                            <Col  xs={8} xl={8}>
+                            <Image key={gallery.key}
+                            src={gallery.src}></Image>
+   
+                            </Col>  
+                            
+                          )
+                        })
+                      }
+                    
                     </Row>
      
                </Row>

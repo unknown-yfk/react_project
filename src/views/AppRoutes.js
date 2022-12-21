@@ -16,7 +16,7 @@ const AppRoutes = () => {
         <Route path="/gallery" element={ <Gallery/>} />
 
 
-</Routes>
+      </Routes>
     </div>
   )
 }

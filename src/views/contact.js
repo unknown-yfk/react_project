@@ -1,4 +1,5 @@
 import { Anchor, Row, Col, Image, Typography,Button, Form, Input, InputNumber,Divider } from 'antd';
+import TitleBar from '../components/TitleBar';
 
 const { Paragraph, Text } = Typography;
 const layout = {
@@ -12,6 +13,7 @@ const layout = {
 const tailLayout = {
   wrapperCol: { xs: { span: 6 }, sm: { span: 16, offset: 4 }, md: { span: 12, offset: 8 }, lg: { span: 16, offset: 4 } }
 };
+
 
 
 const validateMessages = {
@@ -37,11 +39,9 @@ const Trail = () => {
 
       <div className='contenStyleTrail'>
               <div className="contactStyle">
-            <Text style={{textAlign:'center'}}><h1> Contact Us</h1>
+            <Text style={{textAlign:'center'}}>
+            <TitleBar text={'Hello From Contact Us'}/>
             <Divider plain></Divider>
-            <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim.
-                 Mollit exercitation nulla esse.</h5> 
-           </Paragraph>
             </Text>
               </div>
       <Row gutter={[16, 16]}
@@ -89,7 +89,7 @@ const Trail = () => {
             <Form.Item
             {...tailLayout}
             >
-            <Button type="primary" block>Send</Button>
+            <Button type="primary" style={{background:'#7f29B8'}} block>Send</Button>
             </Form.Item>
           </Form>
        

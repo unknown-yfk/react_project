@@ -32,13 +32,13 @@ body {
 
 
 .contenStyleTrail{
-  padding: 80px 100px 100px 100px;
+  padding: 80px 60px 60px 90px;
 }
 
 
 .contenStyleTrail .contactStyle{
 
-  padding: 0 0 100px 0 ;
+  padding: 0 0 50px 0 ;
 
 }
 
@@ -52,21 +52,21 @@ body {
 
 .grid-img1{
 
-  height: 375px !important;
-  width: 500px !important;
+  height: 367px !important;
+  width: 496px !important;
 
 }
 
 .grid-img2 {
 
-  height: 370px !important;
-  width: 510px !important;
+  height: 367px !important;
+  width: 495px !important;
 
 }
 .grid-img3 {
 
-  height: 440px !important;
-  width: 420px !important;
+  height: 431px !important;
+  width: 410px !important;
 
 }
 
@@ -113,7 +113,8 @@ body {
 
 /* header2 style */
 .header2Layout .ant-layout-header {
-  background: rgb(66, 76, 216);
+  /* background: rgb(66, 76, 216); */
+  background:#7f29B8;
   /* background: #ffffff; */
   height: auto;
 
@@ -524,7 +525,7 @@ height: 165px !important;
 }
 
 
-
+/* 
 @media only screen and (max-width: 576px) {
     .grid-img1 {
 
@@ -546,7 +547,7 @@ height: 165px !important;
     width: 50px !important;
 
   }
-}
+} */
 
 
 
