@@ -1,23 +1,17 @@
 import React from "react";
 import './App.css';
-import { Layout } from 'antd';
-import AppHeader from './components/common/header'
-import AppHome from './views/home';
-
-
-const { Header,Content } = Layout;
+import Card from "./Card";
 
 const App = () => {
 
+  const printHello = () => {
+    console.log('hello')
+  }
   return (
-   <Layout className="mainLayout">
-       <Header>
-         <AppHeader/> 
-       </Header>
-       <Content>
-        <AppHome/>
-      </Content>
-    </Layout>
+    <>
+
+    <Card name="hello"/>
+    </>
      
   )
 }
