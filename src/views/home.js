@@ -1,13 +1,14 @@
 
-import AppHero from '../components/home/hero';
-const home = () => {
+// import AppHero from '../components/home/hero';
+const Home = () => {
   return (
    
     <div>
-        <AppHero/>
+        {/* <AppHero/> */}
+        <h1>sdfjn</h1>
     </div>
 
   )
 }
 
-export default home
+export default Home
