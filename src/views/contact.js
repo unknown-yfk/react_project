@@ -7,11 +7,11 @@ const layout = {
     span: 4,
   },
   wrapperCol: {
-    span: 16,
+    span: 24,
   },
 };
 const tailLayout = {
-  wrapperCol: { xs: { span: 6 }, sm: { span: 16, offset: 4 }, md: { span: 12, offset: 8 }, lg: { span: 16, offset: 4 } }
+  wrapperCol: { xs: { span: 6 }, sm: { span: 24, offset: 4 }, md: { span: 24, offset: 6 }, lg: { span: 24, offset: 4 } }
 };
 
 
@@ -39,32 +39,33 @@ const Trail = () => {
 
       <div className='contenStyleTrail'>
               <div className="contactStyle">
-            <Text style={{textAlign:'center'}}>
-            <TitleBar text={'Hello From Contact Us'}/>
-            <Divider plain></Divider>
-            </Text>
+              <Text style={{textAlign:'center'}}>
+              <TitleBar text={'Hello From Contact Us'}/>
+              <Divider plain></Divider>
+              </Text>
               </div>
-      <Row gutter={[16, 16]}
-      >
-        <Col span={16} 
-         xs={24} xl={12} >
-        <Text> <h1> Get in touch with us</h1></Text>
+      <Row>
+        <Col   
+         xs={{span:24}} sm={{span:24}} md={{span:24}} lg={{span:14}} >
+          <div className='contact_para'>
+         <Text> <h1> Get in touch with us</h1></Text>
         <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim. Mollit exercitation.</h5> 
            </Paragraph>
-           <Image
+         
+           <Image className='contact_Img'
             preview={false}
-              width={280}
-              height={250}
+              width={350}
+              height={300}
               src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
                />
+                </div>
         </Col>
-        <Col span={8} 
-         xs={24} xl={12}  >
+        <Col xs={{span:24}} sm={{span:24}} md={{span:24}} lg={{span:10}} >
           <Form  {...layout}>
             <Form.Item
             {...tailLayout}
             >
-          <Text> <h3 > Put Your Information here</h3></Text>
+          <Text> <h3> Put Your Information here</h3></Text>
             </Form.Item>
             <Form.Item 
             label="Name"

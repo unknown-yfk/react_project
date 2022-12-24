@@ -14,7 +14,7 @@ const items = [
         listTitle: [
             {
               name: 'about',
-              to: '/about'
+              to: '/trail'
             },
             {
               name: 'sd',

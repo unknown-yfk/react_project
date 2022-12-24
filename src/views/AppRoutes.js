@@ -11,11 +11,8 @@ const AppRoutes = () => {
   return (
     <div>
         <Routes > 
-
         <Route path="/trail" element={ <Trail/>} />
         <Route path="/gallery" element={ <Gallery/>} />
-
-
       </Routes>
     </div>
   )

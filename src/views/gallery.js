@@ -8,128 +8,6 @@ const { Paragraph, Text } = Typography;
 
 const DemoBox = (props) => <p className={`height-${props.value}`}>{props.children}</p>;
 
-  const gallerys = [
-    {
-     
-          key: '1',
-          src:'https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp'
-         
-  
-      },
-
-      {
-     
-          key: '2',
-          src:'https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp'
-         
-  
-      },
-
-      {
-     
-          key: '3',
-          src:'https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp'
-         
-  
-      },
-
-  ];
-
-
-
-
-  const gallerys2 = [
-     {
-      
-           key: '1',
-           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp',
-          
-          
-   
-       },
- 
-       {
-      
-           key: '2',
-           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
-         
-          
-   
-       },
- 
-       {
-      
-           key: '3',
-           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp',
-          
-   
-       },
-       {
-      
-          key: '4',
-          src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
-        
-         
-  
-      },
-    
- 
-   ];
-
-
-
-
-  const gallerys3 = [
-     {
-      
-           key: '1',
-           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'
-          
-   
-       },
- 
-       {
-      
-           key: '2',
-           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'
-          
-   
-       },
- 
-       {
-      
-           key: '3',
-           src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp'
-          
-   
-       },
-       {
-      
-          key: '4',
-          src:'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'
-         
-  
-      },
-    
- 
-   ];
-
-
-
-
-
-
-//   const tailLayout = {
-
-//   wrapperCol: { xs: { span: 8 }, xl: { span: 6 } },
-//   wrapperCol2:  { xs: { span: 8 }, xl: { span: 12 } },
-//   wrapperCol3:  { xs: { span: 8 }, xl: { span: 7 } },
-//   wrapperCol4:  { xs: { span: 8 }, xl: { span: 10 } },
-//   wrapperCol5:  { xs: { span: 8 }, xl: { span: 8 } }
-
-// };
-
-
 
 
 
@@ -137,17 +15,18 @@ const DemoBox = (props) => <p className={`height-${props.value}`}>{props.childre
 
 const Gallery = () => {
 
-    // const [size, setSize] = useState('small');
-
-
-    // const [visible, setVisible] = useState(false);
-    // const onChange = (e) => {
-    //   setSize(e.target.value);
-    // };
-
 
   return (
-    <Grider/>
+    <>
+         <div className="">
+            <Text style={{textAlign:'center'}}>
+            <TitleBar text={'Hello From Gallery'}/>
+            <h5>Est excepteur in tempor veniam. Consequat in est ad proident deserunt amet ea nostrud aliquip  culpa est reprehenderit ad nulla<br/> adipisicing incididunt  dolor ullamco duis occaecat. Exercitation velit cillum laboris id sunt proident laborum adipisicing.</h5>
+            <Divider plain></Divider>
+            </Text>
+            <Grider/>
+        </div>
+    </>
   )
 }
 

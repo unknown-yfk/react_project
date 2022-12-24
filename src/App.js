@@ -32,9 +32,6 @@ const App = () => {
   return (
     <>
 
-
-
-
       <Layout className="MainLayout">
         <AppHeader/>
   
@@ -44,6 +41,8 @@ const App = () => {
 
     <AppFooter/>
     </Layout>
+
+    
    
     </>
     

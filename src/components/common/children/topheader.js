@@ -62,13 +62,27 @@ const TopHeader = () => {
                   onClose={onClose} 
                   open={open}>                        
                         <Anchor>
-                        <Link to="/" title="Home" />
+                        <Link to="/" title="Home"  />
+                          <Button onClick={() => {
+                           setOpen(false);
+                        }}></Button>
                         <Link to="/trail" title="About Us" />
                         <Link to="/gallery" title="Service" />
                         <Link to="/" title="Gallery" />
                         <Link to="/" title="Contact" />
-                        <Link to="/trail"> Gallery</Link>
                         </Anchor>
+
+                      <Menu 
+                      items={[
+                        {label: 'Home', key: 'home'},
+                        {label: 'Dashboard', key: 'dashboard'},
+                        {label: 'User', key: 'dashboard'},
+                        {label: 'Dashboard', key: 'dashboard'},
+                        {label: 'Dashboard', key: 'dashboard'}
+                      ]}>
+
+                      </Menu>
+                      
                    </Drawer> 
                    {/* <Header2 mode={"inline"}/> */}
           

@@ -8,18 +8,16 @@ const style= {padding: "10px",
             margin: "0 0 24px", 
             textAlign: "center", 
             textTransform: "uppercase"}
-const TitleBar = ({text}) => {
-  return (
-    <Row justify={"center"}>
-      <h1
-        
-        
-        style={style}
-      >
-        {text}
-      </h1>
-    </Row>
-  )
-}
+        const TitleBar = ({text}) => {
+          return (
+            <Row justify={"center"} >
+              <h1
+                style={style}
+              >
+                {text}
+              </h1>
+            </Row>
+          )
+        }
 
 export default TitleBar
