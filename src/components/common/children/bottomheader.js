@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
         const items = [
 
           {
-            label: 'Navigation One',
+            label: 'Courses',
             key: 'mail',
             
           },
@@ -72,7 +72,7 @@ import { Link } from "react-router-dom";
                             menu={{ items }}>
                             <a>
                               <Space>
-                              <Menu.Item> Service <DownOutlined />
+                              <Menu.Item> <Link to="/services">Service</Link> <DownOutlined />
                               </Menu.Item>  
                               </Space>
                             </a>
