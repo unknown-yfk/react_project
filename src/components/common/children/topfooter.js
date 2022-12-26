@@ -1,7 +1,8 @@
 import React from 'react'
-// import { Col, Divider, Row, Space } from 'antd';
-import { Anchor, Row, Col, Image } from 'antd';
-     const { Link } = Anchor;
+import { Row, Col, Image } from 'antd';
+import { Link } from "react-router-dom";
+// const { Link } = Anchor;
+     
 const Topfooter = () => {
   
   
@@ -13,19 +14,19 @@ const items = [
         listTitle: [
             {
               name: 'about',
-              href: '/about'
+              to: '/trail'
             },
             {
               name: 'sd',
-              href: '/about'
+              to: '/about'
             },
             {
               name: 'abosdsaut',
-              href: '/about'
+              to: '/about'
             },
             {
               name: 'aboaasasut',
-              href: '/about'
+              to: '/about'
             },
             
         ]
@@ -39,19 +40,19 @@ const items = [
          listTitle: [
           {
             name: 'aboasaaut',
-            href: '/contact'
+            to: '/contact'
           },
           {
             name: 'aboSADSut',
-            href: '/contact'
+            to: '/contact'
           },
           {
             name: 'aboDFGDFGut',
-            href: '/contact'
+            to: '/contact'
           },
           {
             name: 'aboDFGERTGERut',
-            href: '/contact'
+            to: '/contact'
           },
         ]
     },
@@ -62,19 +63,19 @@ const items = [
          listTitle: [
           {
             name: 'ab34RT5E4Tout',
-            href: '/service'
+            to: '/service'
           },
           {
             name: 'aboRTRTut',
-            href: '/service'
+            to: '/service'
           },
           {
             name: 'aboRTYRTut',
-            href: '/service'
+            to: '/service'
           },
           {
             name: 'aboRTYRut',
-            href: '/service'
+            to: '/service'
           },
         ]
     },
@@ -126,7 +127,7 @@ const items = [
 
                           return(
 
-                            <li><Link href='{item.href}'>{item.name}</Link></li>
+                            <li><Link style={{color:'#333'}} to={item.to}>{item.name}</Link></li>
                             
                           )
                         })
@@ -139,12 +140,6 @@ const items = [
             }
 
             )}
-
-
-
-
-
-            
          
             <Col span={6} className="gutter-row">
              <Image

@@ -1,0 +1,26 @@
+.blur_container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width:100vw; 
+}
+
+.blur_image-container{
+  width:100vw; 
+  height: 41vh;
+
+  filter: blur(3PX);
+}
+
+.blur_centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blur_centered h1 {
+
+  font-family: "Raleway,sans-serif";
+  font-size:62px;
+  color: black;
+}

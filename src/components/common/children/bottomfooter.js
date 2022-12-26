@@ -16,7 +16,7 @@ const BottomFooter = () => {
         </ul>
    
     <div className='copyright'>Ant Design ©2022 Created by SaintMic.</div>
-    {/* <div className='goTop'>  <BackTop><i className='fas fa-arrow-circle-up'></i></BackTop></div> */}
+
     <FloatButton.BackTop />
       </div>
     </div>
