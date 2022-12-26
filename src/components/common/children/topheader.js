@@ -3,7 +3,7 @@ import { Space, Drawer,Button } from 'antd';
 import { Menu } from "antd"
 // import Link from "antd/es/typography/Link"
 // import Header2 from './bottomheader';
-import { Anchor, Image } from 'antd';
+import {  Image } from 'antd';
 import { Link } from "react-router-dom";
 // import image1 from  '../../../assets/images/image1';
 
@@ -21,7 +21,7 @@ const TopHeader = () => {
         const onClose = () => {
           setOpen(false);
         };
-        const { Link } = Anchor;
+        // const { Link } = Anchor;
   return (
 
 
@@ -39,7 +39,7 @@ const TopHeader = () => {
                
                 <a>Saint Michael</a>
             </div>  
-            <Menu mode="horizontal" defaultSelectedKeys={['Home']}
+                   <Menu mode="horizontal" defaultSelectedKeys={['Home']}
                         breakpoint="lg"
                         collapsedWidth="0">
                         <Space>
@@ -48,7 +48,9 @@ const TopHeader = () => {
                         <Menu.Item><i className="fab fa-twitter"> </i></Menu.Item>
                         <Menu.Item><i className="fab fa-linkedin"> </i></Menu.Item>
                        </Space>
-
+                            
+                    </Menu>  
+                    </div>
                 <div className='mobileVisible'>
                   <Space>
                     <Button className='primary' onClick={showDrawer}>
@@ -61,7 +63,7 @@ const TopHeader = () => {
                   placement="right"
                   onClose={onClose} 
                   open={open}>                        
-                        <Anchor>
+                        {/* <Anchor>
                         <Link to="/" title="Home"  />
                           <Button onClick={() => {
                            setOpen(false);
@@ -79,17 +81,31 @@ const TopHeader = () => {
                         {label: 'User', key: 'dashboard'},
                         {label: 'Dashboard', key: 'dashboard'},
                         {label: 'Dashboard', key: 'dashboard'}
-                      ]}>
+                      ]}> */}
 
-                      </Menu>
-                      
+                      {/* </Menu> */}
+
+
+
+
+
+
+
+
+                <Menu mode="horizontal" defaultSelectedKeys={['Home']}
+                  breakpoint="lg"
+                  collapsedWidth="0">
+                  <Menu.Item><Link to="/"> Home</Link></Menu.Item>
+                  <Menu.Item><Link to="/trail"></Link>About Us</Menu.Item>
+                  <Menu.Item><Link to="/gallery"></Link>Gallery</Menu.Item>
+                  <Menu.Item>Contact</Menu.Item>
+                  </Menu>
                    </Drawer> 
                    {/* <Header2 mode={"inline"}/> */}
           
-                </div>
               
-                  
-            </Menu>
+              
+           
             
                 
           
@@ -112,3 +128,5 @@ const TopHeader = () => {
 }
 
 export default TopHeader
+
+

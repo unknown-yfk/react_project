@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Anchor, Row, Col, Image, Typography,Button, Form, Input, InputNumber, Space } from 'antd';
 import { Card, Divider } from 'antd';
 import TitleBar from '../components/TitleBar';
-import Grider from '../components/Grider';
+import Grider2 from '../components/Grider2';
+// import AppContent from '../components/AppContent';
 const { Meta } = Card;
 const { Paragraph, Text } = Typography;
 
@@ -18,15 +19,19 @@ const Gallery = () => {
 
   return (
     <>
-         <div className="">
+
+         <div className='contenStyleTrail'>
             <Text style={{textAlign:'center'}}>
-            <TitleBar text={'Hello From Gallery'}/>
-            <h5>Est excepteur in tempor veniam. Consequat in est ad proident deserunt amet ea nostrud aliquip  culpa est reprehenderit ad nulla<br/> adipisicing incididunt  dolor ullamco duis occaecat. Exercitation velit cillum laboris id sunt proident laborum adipisicing.</h5>
-            <Divider plain></Divider>
+                    <TitleBar text={'Hello From Gallery'}/>
+                         <Divider plain></Divider> 
+                  <Paragraph> <h5>Veniam consequat sunt sint elit tempor enim.
+                      Mollit exercitation nulla esse 
+                  nostrud nisi ex sit Lorem culpa eu cillum Lorem nisi.</h5> 
+                </Paragraph>
             </Text>
-            <Grider/>
-        </div>
-    </>
+          </div>
+                      <Grider2/>
+                    </>
   )
 }
 
