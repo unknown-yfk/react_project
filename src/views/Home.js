@@ -14,36 +14,45 @@ const { Paragraph, Text } = Typography;
 
 const Home = () => {
   return (
-   
-    <div>
+   <>
+       <div>
         {/* <AppHero/> */}
         {/* <AppHero/> */}
         <AppContent/>
               <div className="contactStyle">
               <Text style={{textAlign:'center'}}>
               <TitleBar text={'Our Institute History'}/>
+                <Paragraph style={{fontFamily:'poppins'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit.Praesentium ab modi itaque odit iste possimus <br/> dolor suscipit vitae culpa fugaeligendi voluptatem nobis sunt ut rem veritatis dicta explicabo, autem obcaecati, </Paragraph>
               <Divider plain></Divider>
               </Text>
               </div>
 
   
         <TextImg class_name='ant-row2-b2t_home' title1 = "first title" textStyle={{marginLeft: '50px',
-    marginRight: '50px', marginTop: '50px'}} hor = "2"  img = {imageList[0].location} par = {text[0].content} />
+     marginRight: '50px', marginTop: '50px'}} hor = "2"  img = {imageList[0].location} par = {text[0].content} />
         <Card_w_parrallax/>
+
         <div className="contactStyle">
               <Text style={{textAlign:'center'}}>
               <TitleBar text={'Hello From Contact Us'}/>
+            <Paragraph style={{fontFamily:'poppins'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit.Praesentium ab modi itaque odit iste possimus <br/> dolor suscipit vitae culpa fugaeligendi voluptatem nobis sunt ut rem veritatis dicta explicabo, autem obcaecati, </Paragraph>
               <Divider plain></Divider>
               </Text>
-              </div>
+        </div>
+
+        <div>
         <Card_normal/>
-        <div className='contenStyleTrail'>
+          </div>      
+        <div className='contenStyleTrail' style={{background:'#f5f5f5', padding:'50px'}}>
         <Location  title = "title title" img = {imageList[4].location}/>     
         </div>
         
 
 
     </div>
+
+  </>
+
 
   )
 }

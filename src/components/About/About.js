@@ -20,7 +20,7 @@ function About() {
 </Row>
 
     
-     <TextImg  class_name = "ant-row2-b2t"  title1 = "First Title " hor = "1"  img = {imageList[0].location} par = {text[0].content} 
+     <TextImg  class_name = "ant-row2-b2t"   title1 = "First Title " hor = "1"  img = {imageList[0].location} par = {text[0].content} 
    title2 = "second title " img2 = {imageList[0].location} par2 = {text[0].content}
   />
   <h1 style={{marginLeft: '150px',
@@ -32,7 +32,7 @@ function About() {
   {/* <TitleBar style={{marginLeft: '100px',
     marginRight: '100px', marginTop: '100px'}} text = "“ Learning allows us to make sense of the world around us, the world inside of us, and where we fit within the world. “"/> */}
 
-<TextImg title1 = "first title" hor = "2" class_name="ant-row2-b2t"  img = {imageList[0].location} par = {text[0].content} 
+<TextImg title1 = "first title" hor = "2" class_name="ant-row2-b2t" Height={400}  img = {imageList[0].location} par = {text[0].content} 
    title2 = "second title "  img2 = {imageList[0].location} par2 = {text[0].content}   textStyle={{marginLeft: '100px',
    marginRight: '100px', marginTop: '100px'}}
   />
@@ -45,7 +45,7 @@ function About() {
 {/* <TitleBar style={{marginLeft: '100px',
     marginRight: '100px', marginTop: '100px'}} text = "“ When we improve our education and continue to learn, we can foster new connections, increase our marketable skills, and understand people better. “" />
    */}
-  <TextImg title1 = "first title " class_name='ant-row2-b2t' hor = "3"  img = {imageList[0].location} par = {text[0].content} 
+  <TextImg title1 = "first title "  class_name='ant-row2-b2t' hor = "3"  img = {imageList[0].location} par = {text[0].content} 
   />
 
   

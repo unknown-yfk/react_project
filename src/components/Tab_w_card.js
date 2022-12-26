@@ -33,6 +33,13 @@ const items = [
         label:"About",
         key:'100% online and self-paced. No set class schedules so you set the pace and study when you can 24/7Aute ullamco nisi nostrud proident laboris cupidatat quis. Nisi incididunt reprehenderit aliqua sit mollit ipsum nulla laboris deserunt eiusmod. Dolor do occaecat dolore officia deserunt consequat culpa voluptate sit. Ipsum dolor laborum qui cillum commodo deserunt. Minim esse eu sunt ipsum proident.'
     },
+
+     {
+        img:"hello",
+        title:"Database",
+        label:"About",
+        key:'100% online and self-paced. No set class schedules so you set the pace and study when you can 24/7Aute ullamco nisi nostrud proident laboris cupidatat quis. Nisi incididunt reprehenderit aliqua sit mollit ipsum nulla laboris deserunt eiusmod. Dolor do occaecat dolore officia deserunt consequat culpa voluptate sit. Ipsum dolor laborum qui cillum commodo deserunt. Minim esse eu sunt ipsum proident.'
+    },
     
     
 ]
@@ -71,8 +78,9 @@ function onChange(key) {
 const Tab_w_card = () => {
   
     return (
-    <div style={{margin:"10% 5% 0 5%"}}>
-        <Tabs style={{backgroundColor:"rgba(173, 216, 230,0.1)"}} tabPosition='top' animated={{tabPane: true}} type="card"
+    <div style={{margin:"5% 5% 0 5%", padding:'auto'}}>
+        
+        <Tabs style={{backgroundColor:"rgba(173, 216, 230,0.1)", padding:'30px'}} tabPosition='top' animated={{tabPane: true}} type="card"
         defaultActiveKey="1"
         onChange={onChange}
         items={[

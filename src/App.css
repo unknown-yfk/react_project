@@ -12,6 +12,8 @@ general
 
 }
 
+
+
 body {
   font-size: 16px;
   color: #333;
@@ -490,6 +492,7 @@ footer
 
 .ant-row{
   width: auto !important;
+  color: #cac7cc;
 }
 
 .contenStyleTrail{

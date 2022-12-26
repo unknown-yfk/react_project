@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Card,} from 'antd'
+import {Row, Card, Divider} from 'antd'
 import { SlGraduation } from 'react-icons/sl'
 const items = [
   {
@@ -45,20 +45,23 @@ const items = [
 const Card_normal = () => {
   return (
     <>
-      <Row gutter={[16,16]} justify='center' wrap="false" style={{margin:"0.5% 1%",}}>
+      <Row gutter={[0 ,100]} justify='center' wrap="false" style={{margin:"10% 0.5% 15%  1%",}}>
         {
         items.map((data) => {
             return(
-                <Card hoverable= {false} bordered={"false"} bodyStyle={{padding:3}} style={{margin:"0.5% 1%",maxWidth:350,border:"0"}} cover={
+                <Card hoverable= {false} bordered={"false"} bodyStyle={{padding:3}} style={{margin:"0.5% 1%",maxWidth:350,border:"0", background:'#f5f5f5', padding:'30px', fontFamily:'poppins'}} cover={
                     <SlGraduation size={100} style={{paddingLeft:5}}/>
                   }>
                     <h1 style={{fontFamily: "Montserrat", textAlign: "center",margin:"0px"}}>{data.title}</h1>
                     <p style={{fontFamily: "Montserrat",fontSize:18, textAlign: "center",margin:"0px"}}>{data.key}</p>
                 </Card>
+
+                
             )
 
         })
         }
+           <Divider plain></Divider>
     </Row>
     </>
   )
