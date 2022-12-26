@@ -39,6 +39,7 @@ const items = [
       label:"A",
       key:'100% online and self-paced. No set class schedules so you set the pace and study when you can 24/7'
   },
+ 
   
 ]
 const Card_normal = () => {
@@ -53,8 +54,6 @@ const Card_normal = () => {
                   }>
                     <h1 style={{fontFamily: "Montserrat", textAlign: "center",margin:"0px"}}>{data.title}</h1>
                     <p style={{fontFamily: "Montserrat",fontSize:18, textAlign: "center",margin:"0px"}}>{data.key}</p>
-                    
-
                 </Card>
             )
 

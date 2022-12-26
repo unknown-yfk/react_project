@@ -9,6 +9,7 @@ general
   padding: 0;
   box-sizing: border-box;
 
+
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 
 .contenStyle{
-    padding: 60px 0  120px 0 ;
+    padding: 0 0  120px 0 ;
 }
 
 
@@ -43,11 +44,6 @@ body {
   padding: 80px 0 100px 0;
 }
 
-.contact_Img{
-
-
-
-}
 
 
 .grid-img1{

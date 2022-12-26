@@ -1,5 +1,7 @@
 import { Anchor, Row, Col, Image, Typography,Button, Form, Input, InputNumber,Divider } from 'antd';
 import TitleBar from '../components/TitleBar';
+import Location  from '../components/About/components/Location';
+import imageList from '../components/About/imageList';
 
 const { Paragraph, Text } = Typography;
 const layout = {
@@ -100,7 +102,34 @@ const Trail = () => {
 
 
       </Row>
-        </div>      
+
+
+
+
+              <div className="contactStyle">
+                  <Divider plain></Divider>
+                  <Text style={{textAlign:'center'}}>
+                  {/* <TitleBar text={'Contact Form'}/> */}
+                      <h1 style={{marginLeft: '150px',
+        marginRight: '150px', marginTop: '100px',fontFamily: 'Kalam', fontStyle:'italic',
+        fontSize:" 16px", fontWeight: 500, lineHeight: "60px",textAlign: "center", 
+        textTransform: "uppercase", textShadow: "0px 0px 1px rgb(122, 120, 120)"}}>
+    “ Learning allows us to make sense of the world around us, the world inside of us, and where we fit within the world.”
+      </h1>
+                  </Text>
+                <Location  title = "title title" img = {imageList[4].location}/>     
+              </div>
+        </div> 
+
+        <h1 style={{marginLeft: '150px',
+            marginRight: '150px', marginTop: '100px',fontFamily: 'Kalam', fontStyle:'italic',
+            fontSize:" 16px", fontWeight: 500, lineHeight: "60px",textAlign: "center", 
+            textTransform: "uppercase", textShadow: "0px 0px 1px rgb(122, 120, 120)"}}>
+          “ When we improve our education and continue to learn, we can foster new connections, increase our marketable skills, and understand people better. ”
+        </h1>
+
+
+        
 
     </>
   )

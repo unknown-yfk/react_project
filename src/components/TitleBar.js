@@ -5,7 +5,7 @@ const style= {padding: "10px",
             borderRadius:"25% 25% 25% 25%",
             fontFamily: "Raleway,sans-serif", 
             fontSize:" 30px", fontWeight: 800, lineHeight: "72px", 
-            margin: "0 0 24px", 
+            margin: "50px 0 24px", 
             textAlign: "center", 
             textTransform: "uppercase"}
         const TitleBar = ({text}) => {

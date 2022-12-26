@@ -29,13 +29,13 @@ const Card_New = ({items}) => {
             }}
                 
                 cover={
-                    <img style={{maxHeight:""}} src='./sample2.jpg'></img>
+                    <img style={{maxHeight:""}} src='/assets/images/sample2.jpg'></img>
                   }>
                     <div style={{width: "50px",
                         height: "50px",
                         display: "flex",
                         alignItems: "center"}}>
-                    <img src='./sample2.jpg' style={{width:"30px", height:"30px", borderRadius:"50px"}}></img>
+                    <img src='/assets/images/sample2.jpg' style={{width:"30px", height:"30px", borderRadius:"50px"}}></img>
                     <small style={{marginLeft:"20%"}}>programming</small>
 
                     </div>

@@ -65,9 +65,9 @@ import { Link } from "react-router-dom";
                                 breakpoint="lg"
                                 collapsedWidth="0">
                     <Menu.Item><Link to="/"> Home</Link></Menu.Item>
-                    <Menu.Item><Link to="/trail"></Link>About Us</Menu.Item>
+                    <Menu.Item><Link to="/trail"></Link>Contact Us</Menu.Item>
                     <Menu.Item><Link to="/gallery"></Link>Gallery</Menu.Item>
-                    <Menu.Item>Contact</Menu.Item>
+                    <Menu.Item> <Link to="/about"></Link>About Us</Menu.Item>
                           <Dropdown
                             menu={{ items }}>
                             <a>
