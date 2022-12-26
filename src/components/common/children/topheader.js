@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import { Space, Drawer,Button } from 'antd';
-import { Menu } from "antd"
+import { Space, Drawer,Button, Anchor, Image } from 'antd';
+import { Menu } from "antd";
 // import Link from "antd/es/typography/Link"
 // import Header2 from './bottomheader';
-import { Anchor, Image } from 'antd';
+import {  } from 'antd';
 import { Link } from "react-router-dom";
-// import image1 from  '../../../assets/images/image1';
+
+
+
+//  const { Link } = Anchor;
+
 
 
 
@@ -21,7 +25,13 @@ const TopHeader = () => {
         const onClose = () => {
           setOpen(false);
         };
-        const { Link } = Anchor;
+        // const { Link } = Anchor;
+
+        const hideSidebar = () => {
+          
+          setOpen(false);
+
+        }
   return (
 
 
@@ -39,7 +49,7 @@ const TopHeader = () => {
                
                 <a>Saint Michael</a>
             </div>  
-            <Menu mode="horizontal" defaultSelectedKeys={['Home']}
+                   <Menu mode="horizontal" defaultSelectedKeys={['Home']}
                         breakpoint="lg"
                         collapsedWidth="0">
                         <Space>
@@ -48,35 +58,35 @@ const TopHeader = () => {
                         <Menu.Item><i className="fab fa-twitter"> </i></Menu.Item>
                         <Menu.Item><i className="fab fa-linkedin"> </i></Menu.Item>
                        </Space>
-
-                <div className='mobileVisible'>
-                  <Space>
-                    <Button className='primary' onClick={showDrawer}>
-                  <i className='fas fa-bars' ></i> 
-                    </Button>
-                  </Space>
+                      <div className='mobileVisible'>
+                        <Space>
+                          <Button className='primary' onClick={showDrawer}>
+                        <i className='fas fa-bars' ></i> 
+                          </Button>
+                        </Space>
+                      </div>
+                  </Menu>
+               
                  
                    <Drawer 
-                  title="Drawer"
+                  
                   placement="right"
                   onClose={onClose} 
-                  open={open}>                        
-                        <Anchor>
-                        <Link to="/" title="Home" />
-                        <Link to="/trail" title="About Us" />
-                        <Link to="/gallery" title="Service" />
-                        <Link to="/" title="Gallery" />
-                        <Link to="/" title="Contact" />
-                        <Link to="/trail"> Gallery</Link>
-                        </Anchor>
+                  open={open}>                     
+                 <Menu mode="vertical" defaultSelectedKeys={['Home']}
+                                breakpoint="lg"
+                                collapsedWidth="0" onClick={hideSidebar}>
+                    <Menu.Item><Link  to="/"> Home</Link></Menu.Item>
+                    <Menu.Item><Link  to="/trail"></Link>About Us</Menu.Item>
+                    <Menu.Item><Link  to="/gallery"></Link>Gallery</Menu.Item>
+                    <Menu.Item>Contact</Menu.Item>
+                          
+                    </Menu>
                    </Drawer> 
-                   {/* <Header2 mode={"inline"}/> */}
+                
           
-                </div>
               
                   
-            </Menu>
-            
                 
           
         </div>

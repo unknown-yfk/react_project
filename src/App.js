@@ -11,7 +11,8 @@ import AppRoutes from "./views/AppRoutes";
 
 import {
   Routes,
-  Route
+  Route,
+  Outlet
 } from "react-router-dom";
 // import Link from "antd/es/typography/Link";
 
@@ -37,9 +38,11 @@ const App = () => {
 
       <Layout className="MainLayout">
         <AppHeader/>
+
   
       <Content className="contenStyle">
             <AppRoutes/>
+            <Outlet/>
       </Content>
 
     <AppFooter/>
