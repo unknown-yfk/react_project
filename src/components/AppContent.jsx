@@ -10,7 +10,7 @@ function AppContent(){
   return(
       <div>
            
-       <Carousel autoplaySpeed={5000} dotPosition={'bottom'} dots={true} effect={'fade'} easing={'easeOut'}>
+       <Carousel autoplay autoplaySpeed={5000} dotPosition={'bottom'} dots={true} effect={'fade'} easing={'easeOut'}>
        <div className="container">
        <div className="image1">
        <div className="overlay">
