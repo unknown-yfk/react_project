@@ -2,6 +2,8 @@
     position: relative;
     max-width: 100%;
   height: auto;
+  line-height: 2cm;
+  background-color: red;
  
   }
   .overlay
@@ -12,12 +14,75 @@
   
     text-align: center;
     color:#fff;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     text-align: center;
     width: 100%;
     height: 100%;
+    
    
   }
+
+
+  .carouselStyle{
+    background-color: #353535a9;
+    max-width: 1200px;
+    padding: 0 130px 0 130px;
+    margin: auto;
+    opacity: 0.8;
+position: relative;
+  }
+
+  .carouselStyle2{
+   
+    background-color: #e4a70e6b;
+    max-width: 1200px;
+    margin: auto;
+
+  }
+
+    .carouselStyle3{
+
+      background-color: #353535a9;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 130px 0 130px;
+        word-spacing: 2;
+        opacity: 0.8;
+        
+    }
+
+
+
+    .carouselStyle4{
+    
+      background-color:  #353535a9;
+        padding: 0 130px 0 130px;
+        opacity: 0.8;
+        max-width: 800px;
+        margin-right: auto;
+       
+
+        }
+
+
+                 .carouselStyle5 {
+        
+                   background-color: #e4a70e6b;
+                   padding: 0 100px 0 100px;
+                   position: absolute;
+                   opacity: 0.8;
+                   max-width: 500px;
+                   margin-left: auto;
+                  top: 170px;
+                  right: 100px;
+                  border-radius: 50px;
+        
+                 }
+
+
+
+
+
   
   @keyframes slideInDown {
 from  {

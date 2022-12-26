@@ -18,7 +18,7 @@ const Services = () => {
     <div>
         {/* <AppHero/> */}
           
-        {/* <Title_o_Image /> */}
+        <Title_o_Image />
     
         <Tab_w_card/>
         

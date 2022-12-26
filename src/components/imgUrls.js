@@ -78,7 +78,7 @@ export const carousel1 = [
     content: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}
     ,{key: "1", 
     title: " Lorem Ipsum?",
-    content: "When an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+    content: "When an unknown printer took a galley of type and scrambled it to make a type specimen book , When an unknown printer took a galley of type and scrambled it to make a type specimen book When an."}
     ,{key: "1", 
     title: "What is Lorem ?",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"} 
