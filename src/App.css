@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    
+    margin-top: 5%;
+}
+
+.panel-heading{
+    padding: 2px 2px 0 2px;
+}
+
+.form-control-div{
+    display: flex;
+}
+.form-control-div input{
+    margin-left: 5%;
+}
+
+.form-control-div1{
+    display: flex;
+    margin-top: 1%;
+}
+.form-control-div1 input{
+    margin-right: 3%;
+}
