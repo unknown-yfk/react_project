@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Button from "../Button"
-import ButtonSm from "../ButtonSm"
+// import ButtonSm from "../ButtonSm"
 
 
 const TaskForm = () => {
@@ -66,7 +66,7 @@ const TaskForm = () => {
 
           <div class="input-group-sm form-control-div1">
              <input type="text" class="form-control" placeholder="g1_slot1"/>
-            <ButtonSm/>
+            {/* <ButtonSm/> */}
          </div>
                     )
                 })

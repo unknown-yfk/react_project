@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
-import TaskForm from "./components/Task/TaskForm";
+// import TaskForm from "./components/Task/TaskForm";
 
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
 
       {/* main-content  */}
     <div class="panel-body">
-{/* 
+
           <div class="row">
 
               <hr/>
@@ -73,7 +73,7 @@ const App = () => {
         </div>
 
 
- */}
+
     
     </div>
 
