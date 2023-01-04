@@ -5,8 +5,8 @@
   const TaskList = () => {
 
    
-      const [hobby2, setHobby2] = useState([{firstname:'', lastname:''},
-                                        {firstname:'', lastname:''}])
+      const [hobby2, setHobby2] = useState([{firstname:'g1_slot1', lastname:''},
+                                          {firstname:'g1_slot2', lastname:''},])
     
 
 
@@ -38,7 +38,7 @@
                 return(
                   
          <div key={item.id}className="input-group-sm form-control-div1">
-             <input type="text" className="form-control" placeholder={item.name}/>
+             <input type="text" className="form-control" placeholder={item.firstname}/>
               <button onClick={() =>  handleRemoveFields(index)} className="btn btn-danger btn-sm"><i className="fas fa-minus"></i></button>
          </div>
                      )

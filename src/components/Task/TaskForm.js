@@ -4,11 +4,12 @@ import TaskList from "./TaskList"
 
 const TaskForm = () => {
 
-    const [hobby, setHobby] = useState([{firstname:'sd', lastname:'sd'},
-                                        {firstname:'sd', lastname:'ds'}])
+    const [hobby, setHobby] = useState([{firstname:'group1', lastname:''},
+                                        {firstname:'group2', lastname:''}])
   
     const handleAddFields = () => {
-       setHobby([...hobby, {firstname:'',lastname:''}])
+       setHobby([...hobby, {firstname:'group3',lastname:''},
+      ])
     }
 
     const handleRemoveFields = (index) => {
@@ -20,17 +21,6 @@ const TaskForm = () => {
 
     }
 
-
-    // Delete Task
-
-  // const deleteTask = (id) => {
-
-  //   console.log('delete',id);
-        
-  //     setHobby(hobby.filter((item)=> item.id !== id))
-
-  // }
-  
     
   return (
     <>
@@ -74,13 +64,11 @@ const TaskForm = () => {
 
            <div className="row">
            <div className="col-md-5 form-control-div">
-               {/* <button  onClick={() => deleteTask(item.id)}   className="btn btn-danger"><i className="fas fa-minus"></i></button> */}
-
-
+           
             
 
-      <button    onClick={() =>  handleRemoveFields(index)} className="btn btn-danger"><i className="fas fa-minus"></i></button>
-               <input type="text" className="form-control" placeholder={item.name}/>
+      <button  onClick={() =>  handleRemoveFields(index)} className="btn btn-danger"><i className="fas fa-minus"></i></button>
+               <input type="text" className="form-control" placeholder={item.firstname}/>
            </div>
 
 
