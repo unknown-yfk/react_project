@@ -1,94 +1,105 @@
 import { useState } from "react"
-import Button from "../Button"
-// import ButtonSm from "../ButtonSm"
+import TaskList from "./TaskList"
 
 
 const TaskForm = () => {
 
-    const [hobby, setHobby] = useState([''])
-    const [hobby2, setHobby2] = useState([''])
+    const [hobby, setHobby] = useState([{firstname:'sd', lastname:'sd'},
+                                        {firstname:'sd', lastname:'ds'}])
+  
+    const handleAddFields = () => {
+       setHobby([...hobby, {firstname:'',lastname:''}])
+    }
+
+    const handleRemoveFields = (index) => {
+
+      const values = [...hobby];
+      values.splice(index, 1);
+      setHobby(values);
+
+
+    }
+
+
+    // Delete Task
+
+  // const deleteTask = (id) => {
+
+  //   console.log('delete',id);
+        
+  //     setHobby(hobby.filter((item)=> item.id !== id))
+
+  // }
+  
     
   return (
     <>
      
    
-<div class="container"> {/* container begin */}
+<div className="container"> {/* container begin */}
  
- <div class="panel panel-default">
+ <div className="panel panel-default">
 
    {/* breadcrumb */}
-   <div class="panel-heading">
+   <div className="panel-heading">
 
      <nav aria-label="breadcrumb">
-         <ol class="breadcrumb">
-           <li class="breadcrumb-item">Grupos</li>
-           <li class="breadcrumb-item active" aria-current="page">Slots</li>
+         <ol className="breadcrumb">
+           <li className="breadcrumb-item">Grupos</li>
+           <li className="breadcrumb-item active" aria-current="page">Slots</li>
          </ol> 
      </nav>
    </div>
 
      {/* main-content  */}
-   <div class="panel-body">
+   <div className="panel-body">
                 
                 {
-                    hobby.map((item) => {
+                    hobby.map((item,index) => {
 
                         return (
                             <>
-            <div class="row">
+            <div className="row row-names">
               
                 <hr/>
-                <div class="col-md-5">
+                <div className="col-md-5">
                     <label>#  Grupo</label>
 
                 </div>
         
-                <div class="col-md-7">
+                <div className="col-md-7">
                     <label>Slot</label>
                 </div>
            </div>
 
-           <div class="row">
-           <div class="col-md-5 form-control-div">
-              <Button/>
-               <input type="text" class="form-control" placeholder="group1"/>
+           <div className="row">
+           <div className="col-md-5 form-control-div">
+               {/* <button  onClick={() => deleteTask(item.id)}   className="btn btn-danger"><i className="fas fa-minus"></i></button> */}
+
+
+            
+
+      <button    onClick={() =>  handleRemoveFields(index)} className="btn btn-danger"><i className="fas fa-minus"></i></button>
+               <input type="text" className="form-control" placeholder={item.name}/>
            </div>
-         
 
 
-           <div class="col-md-7">
+           <div className="col-md-7">
              
-             {/* <hr/> */}
 
-            {
-                hobby2.map(() => {
-                    return(
-
-          <div class="input-group-sm form-control-div1">
-             <input type="text" class="form-control" placeholder="g1_slot1"/>
-            {/* <ButtonSm/> */}
-         </div>
-                    )
-                })
-            }
-
-
-             <hr/>
-           <button class="btn btn-info btn-sm mt-5" onClick={() => setHobby2([...hobby2,''])}><i class="fas fa-plus"></i>Add Slot</button>
-         
+                   <TaskList/>
+                   
+       
        
            </div>
         </div>
     
-                            </>
+                      </>
+
+
                         )
                     })
                 }
-
-
-
-       
-
 
    </div>
 
@@ -96,9 +107,12 @@ const TaskForm = () => {
 
 
    {/* footer */}
-   <div class="panel-footer">
-      <button class="btn btn-primary btn-sm mt-5" onClick={() => 
-    setHobby([...hobby,''])}><i class="fas fa-plus"></i>Add Group</button>
+   <div className="panel-footer">
+      {/* <button className="btn btn-primary btn-sm mt-5" onClick={() => 
+    setHobby([...hobby,''])}><i className="fas fa-plus"></i>Add Group</button>
+          */}
+           <button className="btn btn-primary btn-sm mt-5" onClick={() => 
+    handleAddFields()}><i className="fas fa-plus"></i>Add Group</button>
          
        
    </div>

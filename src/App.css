@@ -16,6 +16,7 @@ body{
 
 .form-control-div{
     display: flex;
+    padding-bottom: 4%;
 }
 .form-control-div input{
     margin-left: 5%;
@@ -24,7 +25,17 @@ body{
 .form-control-div1{
     display: flex;
     margin-top: 1%;
+    padding-bottom: 4%;
 }
 .form-control-div1 input{
     margin-right: 3%;
+}
+
+
+@media(max-width:750px){
+
+    
+    .row-names{
+        display: inline-flex;
+    }
 }
