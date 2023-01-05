@@ -2,12 +2,12 @@
   
   
   
-  const TaskList = () => {
+  const TaskList2 = () => {
 
    
-      const [hobby2, setHobby2] = useState([{firstname:'g1_slot1', lastname:''},
-                                          {firstname:'g1_slot2', lastname:''},
-                                         {firstname:'g1_slot3', lastname:''},])
+      const [hobby2, setHobby2] = useState([{firstname:'g2_slot1', lastname:''},
+                                          {firstname:'g2_slot2', lastname:''},
+                                      ])
     
 
 
@@ -59,4 +59,4 @@
   )
 }
 
-export default TaskList
+export default TaskList2

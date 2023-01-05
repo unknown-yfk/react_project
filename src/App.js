@@ -7,13 +7,13 @@ const App = () => {
 
 
 
-  // Delete Task
+  // // Delete Task
 
-  const deleteTask = (id) => {
+  // const deleteTask = (id) => {
 
-    console.log('delete');
+  //   console.log('delete');
 
-  }
+  // }
   
   return (
 
